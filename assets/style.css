@@ -256,31 +256,39 @@ body {
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
+
     padding: 2rem;
 }
 
 /* -----------------------------contenuto righe */
 /* bonus */
 .grey-bg {
-    background-image: url;
-    background-color: grey;
-    padding: 2rem 0;
-
+    background-image: url(./img/wave.svg);
+    bac
 }
 
 /* bonus */
 .app-image {
-    width: calc(100% / 12 * 6);
+    width: calc(100%/12 * 8);
+}
+
+.app-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    /* dimensione immagine? */
 }
 
 .app-content {
+    width: calc(100%/12 * 4);
     padding: 2rem;
-    width: calc(100% / 12 * 4);
+
 }
 
 .app-content h2 {
+    font-size: 2rem;
     line-height: 2rem;
     margin-bottom: 2rem;
 }
@@ -294,6 +302,8 @@ body {
     /* questa regola funziona perché si sovrascrive essendo dopo la regola row , mette il blocco verde sotto al testo invece che accanto come sopra*/
 
 }
+
+.stars {}
 
 /* #endregion main */
 
