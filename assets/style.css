@@ -18,6 +18,14 @@
     --dark_grey: #23272a
 }
 
+body {
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -247,29 +255,37 @@
 /* #region main */
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 2rem;
 }
 
-/* perché questa non va ? */
-
+/* -----------------------------contenuto righe */
+/* bonus */
 .grey-bg {
+    background-image: url;
     background-color: grey;
     padding: 2rem 0;
 
 }
 
+/* bonus */
 .app-image {
-    height: 100px;
-    width: calc(100% / 12 * 4);
+    width: calc(100% / 12 * 6);
 }
 
 .app-content {
-    height: 100px;
-    width: calc(100% / 12 * 2);
+    padding: 2rem;
+    width: calc(100% / 12 * 4);
 }
 
+.app-content h2 {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* -----------------------------contenuto righe */
 .large {
     display: flex;
     flex-direction: column;
