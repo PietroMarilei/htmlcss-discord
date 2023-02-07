@@ -264,6 +264,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    /* perché non fa wrap? */
 
     padding: 2rem;
 }
@@ -309,6 +311,16 @@ body {
     flex-wrap: wrap;
     /* questa regola funziona perché si sovrascrive essendo dopo la regola row , mette il blocco verde sotto al testo invece che accanto come sopra*/
 
+}
+
+.large h2 {
+    font-size: 2rem;
+    font-weight: 600px;
+}
+
+.large p {
+    padding: 2rem;
+    text-align: center;
 }
 
 .stars {
