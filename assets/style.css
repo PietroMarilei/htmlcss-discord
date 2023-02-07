@@ -1,0 +1,214 @@
+/* #region reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion reset */
+
+/* #region utilities */
+.container {
+    max-width: 1140px;
+    width: 80%;
+    margin: auto;
+}
+
+/* #endregion utilities */
+
+/* #region debug */
+.debug .app-header {
+    background-color: aqua;
+    /* questa sará immagine */
+
+    padding-top: 1rem;
+    /* soluzione provvisoria per la spaziatura del giallo*/
+
+}
+
+.debug .head-bar {
+    margin-bottom: 1rem;
+    /* soluzione provvisoria per la spaziatura del giallo*/
+
+    background-color: rgb(234, 189, 11);
+}
+
+
+/* ------------------------------------------------ */
+.debug .app-logo {
+    width: calc(100%/12 * 2);
+    border: 2px dotted;
+}
+
+.debug .app-link {
+    width: calc(100%/12 * 8);
+    text-align: center;
+    border: 2px dotted;
+}
+
+.debug .app-login {
+    width: calc(100%/12 * 2);
+    text-align: end;
+    border: 2px dotted;
+}
+
+/* ------------------------------------------------ */
+.debug .head-banner {
+    margin: auto;
+    height: 200px;
+    background-color: blue;
+    /* questo centra il contenuto verticalmente*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.debug .head-banner section {
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(243, 84, 182);
+    border: 3px dotted;
+}
+
+.debug .app-image {
+    height: 200px;
+    width: calc(100% / 12 * 4);
+    border: 2px dotted;
+    background-color: rgb(65, 214, 255);
+}
+
+.debug .app-content {
+    height: 200px;
+    width: calc(100% / 12 * 2);
+    border: 2px dotted;
+    background-color: rgb(228, 160, 161);
+}
+
+.debug .grey-bg {
+    background-color: grey;
+    padding: 2rem 0;
+
+}
+
+/* ------------------------------------------ inversione colori */
+.debug .grey-gb .app-image {
+    height: 200px;
+    width: calc(100%/12 *2);
+    border: 2px dotted;
+    background-color: rgb(228, 160, 161);
+}
+
+.debug .grey-gb .app-content {
+    height: 200px;
+    width: calc(100%/12 *4);
+    border: 2px dotted;
+    background-color: rgb(65, 214, 255);
+
+}
+
+/* -------------------------------------------- inversione colori */
+.debug .big-app-image {
+    height: 300px;
+    width: calc(100%/12 * 6);
+
+    background-color: green;
+}
+
+.debug .col-4 {
+    height: 200px;
+    width: 100px;
+    background-color: rgb(228, 160, 161);
+    border: 2px dotted;
+
+}
+
+.debug .col-2 {
+    height: 200px;
+    width: 100px;
+    background-color: rgb(171, 220, 65);
+    border: 2px dotted;
+}
+
+.debug .app-footer-foot {
+    background-color: aquamarine
+}
+
+.debug .footer-app-logo {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(228, 160, 161);
+    border: 2px dotted;
+    margin: 1rem 0;
+}
+
+.debug .footer-app-button {
+    height: 20px;
+    width: 50px;
+    background-color: rgb(228, 160, 161);
+    border: 2px dotted;
+    margin: 1rem 0;
+}
+
+/* #endregion debug */
+
+/* #region header */
+.head-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.app-link {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* #endregion header */
+
+/* #region main */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    /* questa regola funziona perché si sovrascrive essendo dopo la regola row , mette il blocco verde sotto al testo invece che accanto come sopra*/
+
+}
+
+/* #endregion main */
+
+/* #region footer */
+.app-footer {
+    background-color: black;
+}
+
+.app-footer-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.app-footer hr {
+    margin: 1rem 0;
+}
+
+.app-footer-foot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* #endregion footer */
