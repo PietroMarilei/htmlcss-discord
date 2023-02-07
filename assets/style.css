@@ -14,11 +14,15 @@
     margin: auto;
 }
 
+:root {
+    --dark_grey: #23272a
+}
+
 /* #endregion utilities */
 
 /* #region debug */
 .debug .app-header {
-    background-color: aqua;
+    background-image: url("./img/jumbo.png");
     /* questa sará immagine */
 
     padding-top: 1rem;
@@ -53,7 +57,7 @@
 }
 
 /* ------------------------------------------------ */
-.debug .head-banner {
+.debug .jumbo {
     margin: auto;
     height: 200px;
     background-color: blue;
@@ -63,7 +67,7 @@
     justify-content: center;
 }
 
-.debug .head-banner section {
+.debug .jumbo section {
     margin: auto;
     width: 500px;
     height: 100px;
@@ -153,11 +157,16 @@
 /* #endregion debug */
 
 /* #region header */
+.app-header {
+    background-image: url("./img/jumbo.png");
+}
+
 .head-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1rem;
 }
 
 .app-link {
@@ -166,6 +175,62 @@
     padding-left: 20%;
     padding-right: 20%;
 }
+
+.app-login button {
+    border-radius: 50px;
+    padding: 7px 10px;
+    border: none;
+
+}
+
+/* ----------------------------jumbo */
+.jumbo {
+    padding: 8rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbo h1 {
+    color: aliceblue;
+    text-align: center;
+    padding: 3rem;
+}
+
+.jumbo p {
+    color: aliceblue;
+    text-align: center;
+    padding: 3rem;
+}
+
+/* bottoni jumbo */
+.jumbo .download_btn_browser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.jumbo #download-btn {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    width: fit-content;
+    margin: 1rem;
+
+}
+
+.jumbo #browser-link {
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    width: fit-content;
+    margin: 1rem;
+    color: aliceblue;
+    background-color: var(--dark_grey);
+
+}
+
+/* ----------------------------jumbo */
 
 /* #endregion header */
 
