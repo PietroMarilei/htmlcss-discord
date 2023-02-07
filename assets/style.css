@@ -327,7 +327,7 @@ body {
 
 /* #region footer */
 .app-footer {
-    background-color: black;
+    background-color: var(--dark_grey);
 }
 
 .app-footer-main {
@@ -337,6 +337,35 @@ body {
     padding-top: 1rem;
 }
 
+/* --------------col-4 elements propeties */
+.col-4 h2 {
+    color: var(--light_blue);
+    margin: 1rem 0;
+}
+
+.language_selector {
+    margin: 2rem 0;
+}
+
+.col-4 img {
+    width: 2rem;
+    position: relative;
+    top: 2px;
+    padding-right: 0.5rem;
+}
+
+.col-4 span {
+    color: aliceblue;
+
+}
+
+.col-4 .social_icons i {
+    color: aliceblue;
+    margin-right: 1rem;
+
+}
+
+/* --------------col-4 elements propeties */
 .app-footer hr {
     margin: 1rem 0;
 }
